@@ -1,0 +1,20 @@
+body {
+  font-family: 'Arial';
+}
+
+.navbar {
+  border-radius: 0;
+}
+
+table form {
+  display: inline;
+}
+
+#chart {
+  width: 100%;
+  min-height: 450px;
+}
+
+footer {
+  margin-top: 3em;
+}

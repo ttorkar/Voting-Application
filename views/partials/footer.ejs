@@ -1,0 +1,37 @@
+<footer class="container-fluid">
+  <div class="row">
+    <div class="text-center">
+      <ul class="list-inline">
+        <li>
+          <a href="https://www.linkedin.com/in/trent-torkar" target="_blank">
+            <i class="fa fa-linkedin fa-fw fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/ttorkar" target="_blank">
+            <i class="fa fa-github-alt fa-fw fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    <p class="text-muted">
+      Trent Torkar &copy; <%= new Date().getFullYear() %>
+    </p>
+  </div>
+</div>
+</footer>
+
+<!-- JQUERY -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+<!-- BOOTSTRAP -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- OWN JS -->
+<script src="/js/client.js"></script>
+
+<% if(locals.script) { -%>
+    <%- include(`../scripts/${script}`) %>
+<% } -%>
+
+</body>
+</html>
