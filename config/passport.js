@@ -11,6 +11,7 @@ passport.use(new GitHubStategy({
 
     User.findOrCreate({username: profile.username}, (err,user) => {
       if (err) {
+        console.log("Error")
         return done(err)
       }
 

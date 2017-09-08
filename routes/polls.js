@@ -5,7 +5,7 @@ const auth = require('./../middleware/auth')
 const Poll = require('./../models/poll')
 
 router.get('/new', auth.isLoggedIn, (req, res) => {
-  res.render('polls/news')
+  res.render('polls/new')
 })
 
 router.route('/')
